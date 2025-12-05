@@ -158,6 +158,26 @@ namespace DiscordRPC
 		/// <param name="other"></param>
 		internal void Merge(Assets other)
 		{
+            //Guard against Discord sending null assets in presence updates
+            if (other == null)
+            {
+                _smallimagetext = null;
+                _smallimageurl = null;
+                _largeimagetext = null;
+                _largeimageurl = null;
+
+                _largeimagekey = null;
+                _smallimagekey = null;
+
+                LargeImageID = null;
+                SmallImageID = null;
+
+                IsLargeImageKeyExternal = false;
+                IsSmallImageKeyExternal = false;
+
+                return;
+            }
+            
 			//Copy over the names
 			_smallimagetext = other._smallimagetext;
 			_smallimageurl = other._smallimageurl;
