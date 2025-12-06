@@ -17,6 +17,7 @@ namespace DiscordRPC.IO
 		{
 			"app/com.discordapp.Discord/",	// Flatpak
 			"snap.discord/",				// Snap
+            ".flatpak/dev.vencord.Vesktop/xdg-run" // Vesktop (Flatpak)
 			// TODO: Add more package managers as needed such as AppImage
 		};
 
