@@ -1,7 +1,7 @@
 <table frame="void">
     <tr>
       <td width="200px">
-        <img src="https://raw.githubusercontent.com/Lachee/discord-rpc-csharp/master/Resources/logo.png" align="center" width="100%" />
+        <img src="https://raw.githubusercontent.com/Lachee/discord-rpc-csharp/master/Resources/logo.svg" align="center" width="100%" />
       </td>
       <td>
         <h1>Discord RPC C#</h1>
@@ -22,6 +22,10 @@
     </tr>
 </table>
 
+This is a fork from the original repo by [**Lachee**](https://github.com/Lachee/discord-rpc-csharp).
+
+This fork includes updates to better work within the Halo Mods Launcher.
+
 ## Key Features
 
 Here are some key features of this library:
@@ -39,11 +43,7 @@ Extensive API documentation and usage articles can be found at [lachee.github.io
 
 ## Supported .NET
 This project supports the following .NET:
-- `fx 4.5`
-- `core 3.1`
-- `net 7.0`
-- `net 8.0`
-- `net 9.0`
+- `net 10.0`
 
 Dependencies:
 - [JSON.NET 13](https://www.nuget.org/packages/newtonsoft.json/)
@@ -118,7 +118,7 @@ The [DiscordRPC.Example](https://github.com/Lachee/discord-rpc-csharp/blob/maste
 Use this project as a example on how to implement your own.
 
 ```sh
-dotnet run --framework net9 --project DiscordRPC.Example --example=Basic
+dotnet run --framework net10.0 --project DiscordRPC.Example --example=Basic
 ```
 
 ## Building
