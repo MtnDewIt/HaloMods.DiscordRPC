@@ -1,5 +1,4 @@
-﻿using DiscordRPC.Exceptions;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 
 namespace DiscordRPC

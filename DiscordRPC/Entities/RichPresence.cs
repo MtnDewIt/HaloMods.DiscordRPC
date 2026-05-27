@@ -515,7 +515,7 @@ namespace DiscordRPC
         {
             if (topButton != null && bottomButton != null)
             {
-                Buttons = new Button[] { topButton, bottomButton };
+                Buttons = [topButton, bottomButton];
             }
             else if (topButton == null && bottomButton == null)
             {
@@ -523,7 +523,7 @@ namespace DiscordRPC
             }
             else
             {
-                Buttons = new Button[] { topButton ?? bottomButton };
+                Buttons = [topButton ?? bottomButton];
             }
 
             return this;
@@ -675,7 +675,7 @@ namespace DiscordRPC
         /// Name of the bot
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        new public string Name { get; private set; }
 
     }
 }

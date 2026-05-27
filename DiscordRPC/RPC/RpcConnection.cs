@@ -1,14 +1,14 @@
-﻿using DiscordRPC.Helper;
-using DiscordRPC.Message;
+﻿using DiscordRPC.Events;
+using DiscordRPC.Helper;
 using DiscordRPC.IO;
+using DiscordRPC.Logging;
+using DiscordRPC.Message;
 using DiscordRPC.RPC.Commands;
 using DiscordRPC.RPC.Payload;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using Newtonsoft.Json;
-using DiscordRPC.Logging;
-using DiscordRPC.Events;
 
 namespace DiscordRPC.RPC
 {

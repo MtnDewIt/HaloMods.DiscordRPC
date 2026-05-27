@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DiscordRPC
 {
 	/// <summary>
 	/// The type of event receieved by the RPC. A flag type that can be combined.
 	/// </summary>
-	[System.Flags]
+	[Flags]
 	public enum EventType
 	{
 		/// <summary>
@@ -19,7 +16,7 @@ namespace DiscordRPC
 		/// <summary>
 		/// Called when the Discord Client wishes to enter a game to spectate
 		/// </summary>
-		[System.Obsolete("Spectating is no longer supported by Discord.")]
+		[Obsolete("Spectating is no longer supported by Discord.")]
 		Spectate = 0x1,
 
 		/// <summary>

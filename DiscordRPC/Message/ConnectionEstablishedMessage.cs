@@ -1,8 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
 
 namespace DiscordRPC.Message
 {
@@ -19,7 +15,7 @@ namespace DiscordRPC.Message
 		/// <summary>
 		/// The pipe we ended up connecting too
 		/// </summary>
-		[System.Obsolete("The connected pipe is not neccessary information.")]
+		[Obsolete("The connected pipe is not neccessary information.")]
 		public int ConnectedPipe { get; internal set; }
 	}
 }

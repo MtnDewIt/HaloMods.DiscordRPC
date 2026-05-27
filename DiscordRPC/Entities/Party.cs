@@ -1,5 +1,4 @@
-﻿using DiscordRPC.Exceptions;
-using DiscordRPC.Helper;
+﻿using DiscordRPC.Helper;
 using Newtonsoft.Json;
 using System;
 
@@ -60,7 +59,7 @@ namespace DiscordRPC
 			{
 				//see issue https://github.com/discordapp/discord-rpc/issues/111
 				int size = Math.Max(1, Size);
-				return new int[] { size, Math.Max(size, Max) };
+				return [size, Math.Max(size, Max)];
 			}
 
 			set

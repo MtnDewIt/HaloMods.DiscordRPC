@@ -1,8 +1,7 @@
-
+using DiscordRPC.Message;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DiscordRPC.Message;
 
 namespace DiscordRPC.Example
 {

@@ -1,11 +1,9 @@
-﻿using System;
+﻿using DiscordRPC.Logging;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DiscordRPC.Logging;
+using System.IO;
 using System.IO.Pipes;
 using System.Threading;
-using System.IO;
 
 namespace DiscordRPC.IO
 {
@@ -412,16 +410,16 @@ namespace DiscordRPC.IO
             _isDisposed = true;
         }
 
-        [System.Obsolete("Use PipePermutation.GetPipes instead", true)]
+        [Obsolete("Use PipePermutation.GetPipes instead", true)]
         public static string GetPipeName(int pipe)
             => string.Empty;
-        [System.Obsolete("Use PipePermutation.GetPipes instead", true)]
+        [Obsolete("Use PipePermutation.GetPipes instead", true)]
         public static string GetPipeName(int pipe, string sandbox)
             => string.Empty;
-        [System.Obsolete("Use PipePermutation.GetPipes instead", true)]
+        [Obsolete("Use PipePermutation.GetPipes instead", true)]
         public static string GetPipeSandbox()
             => string.Empty;
-        [System.Obsolete("Use PipePermutation.GetPipes instead", true)]
+        [Obsolete("Use PipePermutation.GetPipes instead", true)]
         public static bool IsUnix()
             => true;
     }
